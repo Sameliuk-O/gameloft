@@ -1,6 +1,12 @@
 import type {FC} from "react";
 import {ScrollDirection, type ScrollTypes} from "./type.ts";
 
+/**
+ * Carousel scroll button component
+ * @param direction - scroll direction (left or right)
+ * @param onClick - click processing function
+ * @param disabled - is the button disabled
+ */
 const ScrollButton: FC<ScrollTypes> = ({
       direction,
       onClick,

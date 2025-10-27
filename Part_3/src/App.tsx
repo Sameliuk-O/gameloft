@@ -5,6 +5,10 @@ import {Carousel} from "./components/Carousel";
 import {ImageModal} from "./components/ImageModal";
 import type {selectedImageTypes} from "./types/selectedImageTypes.ts";
 
+/**
+ * The main component of the application
+ * Displays a product carousel and a modal window for viewing images
+ */
 function App() {
     const [selectedImage, setSelectedImage] = useState<selectedImageTypes>({img: "", title: ""});
     const [showModal, setShowModal] = useState(false);

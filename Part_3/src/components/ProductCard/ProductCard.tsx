@@ -1,5 +1,11 @@
 import type {IProductCard} from "./type.ts";
 
+/**
+ * Product card component
+ * @param product - product object with data
+ * @param onImageClick - function to handle image click
+ * @param setShowModal - function to open a modal window
+ */
 const ProductCard = ({ product, onImageClick, setShowModal }: IProductCard) => {
     return (
         <article

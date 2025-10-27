@@ -1,5 +1,12 @@
 import type {IImageModal} from "./type.ts";
 
+/**
+ * Image viewer modal component
+ * @param image - Image URL
+ * @param title - image title
+ * @param onClose - modal window closing function
+ * @param showModal - modal window display state
+ */
 const ImageModal = ({ image, title, onClose, showModal }: IImageModal) => {
     return (
         <div

@@ -4,6 +4,12 @@ import {ScrollButton} from "../ScrollButton";
 import type {ICarousel} from "./type.ts";
 import {ScrollDirection} from "../ScrollButton/type.ts";
 
+/**
+ * Carousel component for displaying products
+ * @param products - array of products to display
+ * @param onImageClick - image click processing function
+ * @param setShowModal - function to open a modal window
+ */
 const Carousel = ({ products, onImageClick, setShowModal }: ICarousel ) => {
     const carouselRef = useRef<HTMLElement>(null);
     const [isAtStart, setIsAtStart] = useState(true);

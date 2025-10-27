@@ -28,6 +28,14 @@ const PRODUCTS = [
 
 const DISCOUNT = 10;
 
+/**
+ * Function to calculate the final cost of all products
+ * Applies discount to products with quantities greater than 5 units
+ * 
+ * @param {Array} products - array of products with price and quantity properties
+ * @param {number} discount - discount amount in percentage
+ * @returns {number} - total cost including discounts
+ */
 const finalePrice = (products, discount) =>
     products.reduce((total, { price, quantity }) => {
         const isDiscounted = quantity > 5;
