@@ -1,0 +1,43 @@
+Question: What is a CSS Grid? Briefly describe its advantages over Flexbox and explain how you would use it to
+          create a responsive two-column layout with a sidebar on the left and main content on the right.
+
+Answer:
+    CSS Grid is a CSS markup that allows you to create two-dimensional grids (by rows and columns)
+    for arranging elements on a page.
+
+    Advantages over Flexbox
+                CSS Grid______________________________________________________________Flexbox
+        Works in 2 dimensions (rows and columns)_____________|______Works in 1 dimension only (row or column)
+        Sets the structure of the entire layout______________|______Controls the placement of elements within a container
+        Can accurately distribute elements in two directions_|______Aligns elements along the main axis only
+
+
+    The advantage of this approach
+        Easy layout management without additional wrappers.
+        Flexible adaptation to different screen sizes.
+        Easy alignment and control over the space between elements.
+
+
+    CSS Grid is suitable for building complex or two-dimensional layouts, while Flexbox is better used for aligning
+    elements within a row or column.
+
+Example:
+    <div class="grid">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+    </div>
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .item {
+        padding: 20px;
+        border: 1px solid #ccc;
+    }
