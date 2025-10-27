@@ -74,7 +74,7 @@ The third part of the project is a modern web application on React with TypeScri
 - **TypeScript** - code typing
 - **Vite** - build tool
 - **TailwindCSS** - CSS framework for styling
-- 
+
 ### Structure Part_3
 ```
 Part_3/
